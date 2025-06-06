@@ -39,7 +39,7 @@ if page == "Home":
 # =========================
 elif page == "Dataset":
     st.title("📊 Dataset Preview")
-    path = "/Users/harshuu/Desktop/ML_G/dft-road-casualty-statistics-casualty-2023.csv"
+    path = "dft-road-casualty-statistics-casualty-2023.csv"
     df = pd.read_csv(path)
     df.drop(columns=["accident_index", "accident_reference", "lsoa_of_casualty"], inplace=True, errors='ignore')
     df.replace(-1, pd.NA, inplace=True)
